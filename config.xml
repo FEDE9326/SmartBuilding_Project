@@ -1,0 +1,6 @@
+<Simulation StartDate="21/7/2016" StartTime="8:00" SimulationClock="1" SimulationDuration="1day" FrequencyData="0.15" OfficeEndTime="19:00" OfficeStartTime="8:00" Seed="65478" MaxNumberOfPeople="7">
+	<Building OrientationEast="136" Latitude="45.062079" Longitude="7.678479" OrientationWest="278">
+	<Window Height="3" Width="18.7" Orientation="34 W" ExternalDiffusion="0.91" InternalDiffusion="0.49"></Window>
+	<Rooms LUX="500" Dimmer1Step="1500" Dimmer2Step="3100" Dimmer3Step="4200" NumberOfLights="27" TotalLUX="1050" x="6" y="18"></Rooms></Building>
+	<MaxAzimuthAngle>71.7</MaxAzimuthAngle>
+</Simulation>
