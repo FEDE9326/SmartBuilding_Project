@@ -1,5 +1,11 @@
+This project includes a simulator of an intelligent lighting and shadowing system installed in a room of a new building in Turin. The orientation of the room and coordinates are: OrientationEast="136" Latitude="45.062079" Longitude="7.678479" OrientationWest="278".
+
+![Hardware](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/Hardware.png)
+
 The simulator is written in Python and it is composed by 4 MQTT Client and 1 MQTT
 broker. These client exchange messages through publish/subscribe mechanism. 
+
+![MQTT](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/MQTT.png)
 
 The environment publishes data about the solar radiation, azimuth and elevation each
 second. The external light sensor collects this data and sums it up to the artificial one. In
@@ -26,6 +32,8 @@ Then the actuators module can finally publish the values of the artificial light
 shadowing system position updated, ready for the next data coming from the environment.
 We can summarize the process in four phases:
 
+![CL](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/ControlLoop.png)
+
 As can be seen from the previous figure a control loop is generated. The sensor firstly receives new
 external light and sums it up to the old artificial light; the policy controls if the current
 configuration is fine or it can be improved (switching on/off light or moving up the
@@ -43,7 +51,7 @@ Thus from the second file we downloaded data about solar irradiance over the ent
 with a periodicity of 15 minutes. In this file there are many other information like
 irradiance at the top of atmosphere and we could download them in just one shot.
 Files are saved in csv format so they are simply readable by the most part of data analysis
-tools. In figure 13 the formats are shown
+tools. 
 
 Using the mean irradiance values retrieved by the second website we found out that these
 values were integrated over a time period of 15 minutes. So in order to get the
@@ -68,4 +76,12 @@ we have another window in the West position. The light inside will surely depend
 shadowing system position. So we compute the contribution of the external light inside the
 room finding the amount of area uncovered by the shadowing system itself. All the
 parameters regarding the building, the room, transmission factors, date and other
-simulation parameters are collected in an XML file (Figure 13).
+simulation parameters are collected in an XML file.
+
+![XML](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/XML.PNG)
+
+# Results 21/07:
+![POS](https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/21-7pos.png)
+![POS2](https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/21.7Ext.png)
+![POS3](https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/21-7int.png)
+![POS4](https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/21-7dimm.png)
