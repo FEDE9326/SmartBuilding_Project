@@ -32,7 +32,7 @@ Then the actuators module can finally publish the values of the artificial light
 shadowing system position updated, ready for the next data coming from the environment.
 We can summarize the process in four phases:
 
-![CL](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/ControlLoop.png)
+![CL](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/ControlLoop.JPG)
 
 As can be seen from the previous figure a control loop is generated. The sensor firstly receives new
 external light and sums it up to the old artificial light; the policy controls if the current
