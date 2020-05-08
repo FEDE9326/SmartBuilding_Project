@@ -1,11 +1,11 @@
 This project includes a simulator of an intelligent lighting and shadowing system installed in a room of a new building in Turin. The orientation of the room and coordinates are: OrientationEast="136" Latitude="45.062079" Longitude="7.678479" OrientationWest="278".
 
-![Hardware](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/Hardware.png)
+<img align="center" width="80%" height="80%" src="https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/Hardware.PNG">
 
 The simulator is written in Python and it is composed by 4 MQTT Client and 1 MQTT
 broker. These client exchange messages through publish/subscribe mechanism. 
 
-![MQTT](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/MQTT.png)
+<img align="right" width="50%" height="50%" src="https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/MQTT.PNG">
 
 The environment publishes data about the solar radiation, azimuth and elevation each
 second. The external light sensor collects this data and sums it up to the artificial one. In
@@ -32,7 +32,7 @@ Then the actuators module can finally publish the values of the artificial light
 shadowing system position updated, ready for the next data coming from the environment.
 We can summarize the process in four phases:
 
-![CL](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/ControlLoop.JPG)
+<img align="center" width="70%" height="70%" src="https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/ControlLoop.PNG">
 
 As can be seen from the previous figure a control loop is generated. The sensor firstly receives new
 external light and sums it up to the old artificial light; the policy controls if the current
@@ -78,7 +78,7 @@ room finding the amount of area uncovered by the shadowing system itself. All th
 parameters regarding the building, the room, transmission factors, date and other
 simulation parameters are collected in an XML file.
 
-![XML](https://github.com/FEDE9326/SmartBuilding_Project/tree/master/plots/XML.PNG)
+<img align="center" width="60%" height="60%" src="https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/XML.PNG">
 
 # Results 21/07:
 ![POS](https://github.com/FEDE9326/SmartBuilding_Project/blob/master/plots/21-7pos.png)
